@@ -15,8 +15,10 @@ OR
 
 You can also run this command from anaconda with the 'oogabooga' environment active
 ```
-python server.py
+python server.py --auto-launch
 ```
+
+Original Readme:
 
 # Text generation web UI
 
