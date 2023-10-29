@@ -1,3 +1,23 @@
+# Windows Install
+```
+conda create -n oogabooga python=3.11
+conda activate oogabooga
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+git clone https://github.com/oobabooga/text-generation-webui oogabooga
+cd oogabooga
+pip install -r requirements.txt
+```
+
+# Running
+Edit the `run.bat` to point to the folder where your anaconda activate.bat is located. Save and exit. Then you can double click the 'run.bat' when you want to launch it.
+
+OR
+
+You can also run this command from anaconda with the 'oogabooga' environment active
+```
+python server.py
+```
+
 # Text generation web UI
 
 A Gradio web UI for Large Language Models.
