@@ -2,7 +2,7 @@
 ```
 conda create -n oogabooga python=3.11
 conda activate oogabooga
-conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
 git clone https://github.com/natlamir/OogaBooga.git
 cd oogabooga
 pip install -r requirements.txt
