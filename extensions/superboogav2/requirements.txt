@@ -1,5 +1,5 @@
 beautifulsoup4==4.12.2
-chromadb==0.3.18
+chromadb==0.4.15
 lxml
 optuna
 pandas==2.0.3
@@ -8,3 +8,4 @@ sentence_transformers==2.2.2
 spacy
 pytextrank
 num2words
+pydantic==1.10.0a1

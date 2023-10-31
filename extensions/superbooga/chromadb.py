@@ -35,9 +35,9 @@ class Embedder():
 class ChromaCollector(Collecter):
     def __init__(self, embedder: Embedder):
         super().__init__()
-        self.chroma_client = chromadb.Client(Settings(anonymized_telemetry=False))
+        self.chroma_client = chromadb.Client()
         self.embedder = embedder
-        self.collection = self.chroma_client.create_collection(name="context", embedding_function=embedder.embed)
+        self.collection = self.chroma_client.create_collection(name="context", get_or_create=True)
         self.ids = []
 
     def add(self, texts: list[str]):
